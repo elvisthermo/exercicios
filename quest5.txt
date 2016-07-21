@@ -1,0 +1,70 @@
+/*questão 5- Crie um algoritmo chamado Zodiaco. Este algoritmo deve ler a data do seu
+aniversário, guardando os valores do dia e do mês em variáveis diferentes,
+sendo o valor do mês no formato decimal (inteiro). Em seguida atribua um valor
+para a variável signo.eleve seu cosmo */
+
+
+algoritimo zodiaco ;
+variaveis a, mes:inteiro;
+
+inicio
+
+escreva('escreva sua data de nascimento:');
+leia(a);
+escreva('escreva o mes de seu aniverario:');
+leia(mes);
+
+se (mes>12) ou (mes=0) ou (a=0) ou (a>31)then
+		inicio
+			escreva('a data de anivesario ou o mes são invalidos!');
+			escreva('os valores da data de anivesario entre 1 e 31  e o mes entre 1 a 12');
+		fim		
+		
+se não
+	se (mes = 3 ) e (a>=21) ou (mes = 4) e (a<=20) então
+	escreva('você é do signo de aries')	
+	
+se não
+	se (mes = 4)  e (a > = 21) ou (mes=5) e (a<=20) e (a<=20) então
+	escreva('você é do signo de touro jovem aldebaram')
+		
+se não
+ 	se (mes = 5)   e  (a >= 21) ou (mes=6) and (a<=20) então
+	escreva('você e do signo de gemeos ')       
+se não
+	se (mes=6) e (a>=21) ou (mes=7) e (a<=21) então
+	escreva('você e do signo de cancer ')       
+	
+se não
+	se (mes=7) e  (a>=22) ou (mes=8) e (a<=22) então
+	escreva('você e do signo de leão ')       
+		
+se não
+	se (mes=8) e  (a>=23) ou (mes=9) e (a<=9) então                
+	escreva('você e do signo de virgem ')     
+	
+	senão
+	se (mes=9) e  (a>=23) ou (mes=10) e (a<=22) então
+	escreva('você e do signo de  libra')      
+	
+se não
+	se (mes=10) e (a>=23) ou (mes=11) ou (a<=21) então
+	escreva('você e do signo de escorpião ')
+	
+se não
+	se (mes=11) e (a>=22) ou (mes=12) e (a<=21) então
+	escreva('você e do signo de sagitario ')
+  	
+se não   
+	se (mes=12) e (a>=22) ou (mes=1) e (a<=20) então
+	escreva('você e do signo de capricornio ')
+	
+se não
+	se (mes=1) e (a>=21) ou (mes=2) e (a<=19) então
+	escreva('você e do signo de aquario ')
+		       
+se não
+	se (mes=2) e (a>=20) ou (mes=3) e (a<=20) então
+	escreva('você e do signo de  peixes...huehue afrodite');
+	       
+fim.
